@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnityVolunteer</title>
+
+  <!-- Preconexiones a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fuente "Mulish" -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Íconos Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="header__logo">
+    <img src="img/logo.png" alt="Logo UnityVolunteer">
+    <div class="logo-text">
+      <span class="orange-text">UNITY</span>
+      <span class="blue-text">VOLUNTEER</span>
+    </div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="header__nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Icono del menú hamburguesa -->
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Script para abrir/cerrar el menú en móviles -->
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('.header__nav ul');
+    nav.classList.toggle('open');
+  }
+</script>
+
+
+
+<section id="inicio" class="section__inicio">
+  <div class="inicio__content">
+    <h1>Bienvenido a UnityVolunteer</h1>
+    <p>La plataforma que conecta voluntarios con proyectos que generan impacto social.</p>
+
+    <!-- Botones para descarga de la app -->
+    <div class="inicio__botones">
+      <a href="#" class="btn__descarga android">
+        <img src="img/android.png" alt="Descargar para Android">
+        Descargar para Android
+      </a>
+      <a href="#" class="btn__descarga ios">
+        <img src="img/app-store.png" alt="Descargar para iOS">
+        Descargar para iOS
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="nosotros" class="section__nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p class="section__descripcion">UnityVolunteer es una plataforma creada por estudiantes de la UPC con el objetivo de conectar voluntarios apasionados con proyectos que marcan la diferencia.</p>
+
+  <div class="nosotros__grid">
+
+    <!-- Imágenes del lado izquierdo -->
+    <div class="nosotros__imagenes">
+      <img src="img/nosotros-img2.jpg" alt="Equipo UnityVolunteer" class="nosotros__imagen">
+      <img src="img/nosotros-img1.jpg" alt="Actividad de Voluntariado" class="nosotros__imagen">
+    </div>
+
+    <!-- Texto del lado derecho -->
+    <div class="nosotros__texto">
+      <h3>Nuestra Historia</h3>
+      <p>UnityVolunteer nació como una iniciativa para facilitar la gestión de voluntarios, permitiendo que las organizaciones y los voluntarios colaboren de manera más eficiente. Creada por estudiantes de la UPC, esta plataforma busca maximizar el impacto social conectando a personas comprometidas con proyectos que realmente importan.</p>
+
+      <h3>Nuestra Misión</h3>
+      <p>Nuestra misión es crear una plataforma digital integral que permita registrar, programar y seguir en tiempo real las actividades de voluntariado. UnityVolunteer facilita la gestión y coordinación eficiente de proyectos, garantizando una colaboración efectiva para un impacto positivo en las comunidades.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="servicios" class="section__servicios">
+  <h2>Nuestros Servicios</h2>
+  <p class="section__descripcion">Descubre cómo UnityVolunteer puede ayudarte a gestionar mejor tus proyectos de voluntariado.</p>
+
+  <div class="servicios__grid">
+
+    <!-- Servicio 1: Gestión de Voluntarios -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Gestión de Voluntarios" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">group</span>
+        <h3>Gestión de Voluntarios</h3>
+        <p>Organiza y gestiona los perfiles y disponibilidad de voluntarios de forma sencilla.</p>
+      </div>
+    </div>
+
+    <!-- Servicio 2: Acceso para Organizaciones -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Acceso para Organizaciones" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">business</span>
+        <h3>Acceso para Organizaciones</h3>
+        <p>Conecta con voluntarios apasionados y haz un seguimiento de sus actividades y disponibilidad.</p>
+      </div>
+    </div>
+
+    <!-- Servicio 3: Planificación de Actividades -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Planificación de Actividades" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">event</span>
+        <h3>Planificación de Actividades</h3>
+        <p>Coordina eventos y tareas, estableciendo horarios y capacidad de voluntarios en tiempo real.</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section id="planes" class="section__planes">
+  <h2>Planes de Suscripción</h2>
+  <p class="section__descripcion">Elige el plan adecuado para ti o tu organización y accede a todas las funcionalidades de UnityVolunteer.</p>
+
+  <div class="planes__grid">
+
+    <!-- Plan para Voluntarios -->
+    <div class="plan__card">
+      <h3>Plan para Voluntarios</h3>
+      <p>Accede a oportunidades de voluntariado exclusivas y organiza tu tiempo de forma sencilla.</p>
+      <ul>
+        <li><span class="material-icons">check</span> Acceso a actividades voluntarias</li>
+        <li><span class="material-icons">check</span> Gestión de disponibilidad</li>
+        <li><span class="material-icons">check</span> Historial de actividades</li>
+        <li><span class="material-icons">check</span> Reconocimientos por participación</li>
+      </ul>
+      <p class="plan__precio">¡Gratis!</p>
+      <button class="btn">Suscribirse</button>
+    </div>
+
+    <!-- Plan Gratis para Organizaciones -->
+    <div class="plan__card plan__gratis">
+      <h3>Plan Gratis para Organizaciones</h3>
+      <p>Comienza a gestionar voluntarios de forma básica con este plan gratuito.</p>
+      <ul>
+        <li><span class="material-icons">check</span> Publicación de 3 actividades al mes</li>
+        <li><span class="material-icons">check</span> Seguimiento básico de voluntarios</li>
+        <li><span class="material-icons">check</span> Gestión manual de tareas</li>
+      </ul>
+      <p class="plan__precio">¡Gratis!</p>
+      <button class="btn">Suscribirse</button>
+    </div>
+
+    <!-- Plan Premium para Organizaciones -->
+    <div class="plan__card">
+      <h3>Plan Premium para Organizaciones</h3>
+      <p>Optimiza la gestión de tus voluntarios y coordina tus actividades de forma eficiente.</p>
+      <ul>
+        <li><span class="material-icons">check</span> Publicación de actividades ilimitadas</li>
+        <li><span class="material-icons">check</span> Seguimiento avanzado de voluntarios</li>
+        <li><span class="material-icons">check</span> Coordinación en tiempo real</li>
+        <li><span class="material-icons">check</span> Reportes de impacto y estadísticas</li>
+      </ul>
+      <p class="plan__precio">S/. 49/mes</p>
+      <button class="btn">Suscribirse</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section id="testimonios" class="section__testimonios">
+  <h2>TESTIMONIOS</h2>
+  <p class="section__descripcion">Lo que nuestros voluntarios y organizaciones dicen de UnityVolunteer.</p>
+
+  <div class="testimonios__grid">
+
+    <!-- Testimonio 1 -->
+    <div class="testimonio__card">
+      <img src="img/organi1.png" alt="Foto de Organización ABC">
+      <h3>Organización ABC</h3>
+      <p>"Gracias a UnityVolunteer, hemos podido gestionar mejor a nuestros voluntarios y maximizar su impacto en la comunidad."</p>
+    </div>
+
+    <!-- Testimonio 2 -->
+    <div class="testimonio__card">
+      <img src="img/organi2.png" alt="Foto de org.">
+      <h3>Organización Comunitaria de Lima.</h3>
+      <p>"UnityVolunteer me permitió encontrar y gestionar voluntarios de manera efectiva"</p>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="testimonio__card">
+      <img src="img/volunter1.png" alt="Foto de Carla G.">
+      <h3>Carla G.</h3>
+      <p>"UnityVolunteer me permitió encontrar oportunidades de voluntariado que se ajustan a mis intereses y disponibilidad."</p>
+    </div>
+
+    <!-- Testimonio 4 -->
+    <div class="testimonio__card">
+      <img src="img/volunter2.jpg" alt="Foto de Lucas M.">
+      <h3>Lucas M.</h3>
+      <p>"La plataforma hizo que fuera muy fácil encontrar proyectos alineados con mis valores. Una excelente herramienta."</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="contacto" class="section__contacto">
+  <h2>Contactanos</h2>
+  <p class="section__descripcion">¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí para ayudarte!</p>
+
+  <div class="contacto__grid">
+
+    <!-- Imagen representativa -->
+    <div class="contacto__imagen">
+      <img src="img/oficina.jpg" alt="Imagen de nuestra oficina">
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="contacto__form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <input type="text" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <!-- Sección 1: Información de contacto -->
+    <div class="footer__column">
+      <h4>Nuestra oficina</h4>
+      <ul>
+        <li><span class="material-icons">place</span> 123 Lima - Perú</li>
+        <li><span class="material-icons">phone</span> (+51) 900 234 323</li>
+        <li><span class="material-icons">email</span> contacto@unityvolunteer.com</li>
+      </ul>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank"><span class="material-icons">facebook</span></a>
+
+      </div>
+    </div>
+
+    <!-- Sección 2: Servicios -->
+    <div class="footer__column">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Gestión de Voluntarios</a></li>
+        <li><a href="#">Acceso para Organizaciones</a></li>
+        <li><a href="#">Planificación de Actividades</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección 3: Navegación de la página -->
+    <div class="footer__column">
+      <h4>Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#servicios">Nuestros Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2024 UnityVolunteer. Todos los derechos reservados.</p>
+    <p>Hecho con ❤️ por <a href="https://www.unityvolunteer.com" target="_blank">unityvolunteer</a></p>
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>
