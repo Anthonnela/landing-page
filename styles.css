@@ -371,18 +371,14 @@ body {
     color: #666666;
     margin-bottom: 40px;
 }
-
-/* Grid para organizar los 4 cards en una sola línea */
-.servicios__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.serviciosone__grid{
+    display:grid;
     max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin: 0 auto;
 }
-
-/* Estilo de las tarjetas (cards) de servicio */
-.servicio__card {
+.servicio__card{
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
@@ -394,17 +390,17 @@ body {
     align-items: center;
     cursor: pointer;
     position: relative;
+    
 }
 
-/* Estilo para las imágenes de la app */
-.servicio__imagen {
+.servicio__imagen{
     width: 100%;
-    max-width: 200px; /* Tamaño máximo de la imagen */
-    border-radius: 8px;
+    height: auto;
+    border-radius: 12px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-
 .servicio__card:hover .servicio__imagen {
     transform: scale(1.05);
 }
@@ -413,7 +409,6 @@ body {
 .servicio__content {
     text-align: center;
 }
-
 /* Íconos */
 .servicio__content span.material-icons {
     font-size: 50px;
@@ -442,22 +437,17 @@ body {
 .servicio__card:hover h3, .servicio__card:hover p {
     color: #ffffff;
 }
-
-/* Responsividad: Ajustar a pantallas más pequeñas */
-@media (max-width: 1200px) {
-    .servicios__grid {
+@media (max-width: 1000px) {
+    .serviciosone__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .servicios__grid {
-        grid-template-columns: 1fr;
+    .serviciosone__grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
 
 
 /* Sección de planes de suscripción */
@@ -479,6 +469,8 @@ body {
     color: #666666;
     margin-bottom: 40px;
 }
+
+
 
 /* Diseño del grid para las tarjetas */
 .planes__grid {
@@ -588,9 +580,9 @@ body {
 }
 
 /* Grid para organizar los testimonios */
-.testimonios__grid {
+.testimoniosone__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -606,6 +598,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 /* Efecto hover */
@@ -622,6 +615,7 @@ body {
     margin-bottom: 15px;
     object-fit: cover;
     border: 3px solid #3894B6;
+
 }
 
 /* Nombre del usuario */
@@ -640,7 +634,11 @@ body {
     text-align: center;
 }
 
-
+@media (max-width: 600px) {
+    .testimoniosone__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
 .section__contacto {
@@ -648,37 +646,13 @@ body {
     text-align: center;
 }
 
-/* Servicios */
-.section__servicios .servicios__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
 
-.servicio {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    text-align: center;
-}
 
 .servicio span.material-icons {
     font-size: 50px;
     color: #4CAF50;
 }
 
-/* Testimonios */
-.section__testimonios .testimonios__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.testimonio {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-}
 
 /* Contacto */
 .section__contacto form {
